@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Slumdown</title>
@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Slumdown</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A very waffly post about waffles</title>
+      <link>/post/a-very-waffly-post-about-waffles/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/a-very-waffly-post-about-waffles/</guid>
+      <description> I want to talk about waffles. But the truth is I don’t know much about them.
+Here are some things I dont know:  this that anything else  Header Placekitten
+\[ 1+3-7=? \]
+  </description>
+    </item>
     
     <item>
       <title>Tutorial part 1: Getting started</title>
