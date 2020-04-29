@@ -1,0 +1,177 @@
+---
+title: "Top Songs of the 1970's"
+type: "generic_page"
+---
+
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+
+
+<style>
+p.caption {
+ font-size: 10pt; 
+}
+</style>
+<div id="top-songs-of-the-1970s" class="section level1">
+<h1>Top Songs of the 1970’s</h1>
+<div class="figure">
+<img src="/./1970s_files/disco.jpg" alt="Photo by Paul Zoetemeijer on Unsplash" />
+<p class="caption">Photo by <a href="https://unsplash.com/@paul_1865?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Paul Zoetemeijer</a> on <a href="https://unsplash.com/s/photos/disco-ball?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+</div>
+<div id="top-5-songs" class="section level3">
+<h3>Top 5 Songs</h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;font-weight: bold;background-color: black !important;">
+Decade Rank
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Title
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Artist
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Genre
+</th>
+<th style="text-align:right;font-weight: bold;background-color: black !important;">
+Year
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Bohemian Rhapsody - 2011 Mix
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Queen
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+glam rock
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1975
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Highway to Hell
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+AC/DC
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+album rock
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1979
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+3
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Don’t Stop Me Now - 2011 Mix
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Queen
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+glam rock
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1978
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+4
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Rocket Man (I Think It’s Going To Be A Long Long Time)
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Elton John
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+glam rock
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1972
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+5
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+We Will Rock You - Remastered
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Queen
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+glam rock
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1977
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="most-popular-genres" class="section level3">
+<h3>Most Popular Genres</h3>
+Here are the genre types that make up the top songs of the decade:
+<br>
+<br>
+<center>
+<img src="/1970s_files/figure-html/top_genre-1.png" width="672" />
+</center>
+<p><br>
+‘Album rock’ and ‘glam rock’ making up almost half of the top songs of the 1970’s.</p>
+<p>Spotify specifies that ‘adult standards’, which is a genre defined by classic or oldschool hits of the past, was popular in the 1970’s. However, this genre is aggregating the songs of the 1970’s (along with ‘old’ music of other decades) into a contemporary genre called ‘adult standards’, as they are ‘throwback’ songs relative to now. ‘Adult standards’ thereby refers to what we now associate with ‘classic hits’.
+<br>
+<br></p>
+</div>
+<div id="what-makes-a-song-popular" class="section level3">
+<h3>What Makes a Song Popular</h3>
+<p>Let’s unpack what actually <em>made</em> a song popular in the 1970’s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the 1970’s, with popularity as the dependent variable.</p>
+<p>After running the analysis, we are left with the following co-efficients for a regression formula:
+<br><br />
+<span class="math display">\[
+popularity = 57.41 + (-0.10)(energy) + (0.04)(duration) + (0.77)(speechiness)
+\]</span>
+This equation lets us make the inference that in the 1970’s, the audio features of a track that contributed to it being popular were energy, duration and speechiness. More specifically, a song being lower in energy, longer in duration and higher in speechiness would make it more popular. This finding of duration corresponds with the extended song length that glam rock as a genre would tend to have in the1970’s.</p>
+<p>A summary of the stepwise analysis is presented below:</p>
+<pre><code>## 
+## Call:
+## lm(formula = popularity ~ energy + duration + speechiness, data = spotify_data_clean %&gt;% 
+##     filter(decade == decade_input))
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -27.2987  -6.6965  -0.3407   7.2026  17.6735 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 57.40912    4.62128  12.423  &lt; 2e-16 ***
+## energy      -0.09664    0.04628  -2.088  0.03934 *  
+## duration     0.04297    0.01587   2.707  0.00799 ** 
+## speechiness  0.77191    0.36867   2.094  0.03881 *  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 9.105 on 100 degrees of freedom
+## Multiple R-squared:  0.1048, Adjusted R-squared:  0.07794 
+## F-statistic: 3.902 on 3 and 100 DF,  p-value: 0.01107</code></pre>
+</div>
+</div>

@@ -5,9 +5,9 @@
 	<meta name="generator" content="Hugo 0.69.2" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | Waffle Blog</title>
+    <title>Home | Spotify Through the Decades</title>
 
-  <link rel="stylesheet" href=./css/palette_light.css />
+  <link rel="stylesheet" href=./css/palette_black.css />
   
   <link rel="stylesheet" href="./css/et_book.css" />
   <link rel="stylesheet" href="./css/style.css" />
@@ -15,9 +15,9 @@
   
 <meta name="twitter:card" content="summary">
 <meta property="og:title" content="Home">
-<meta property="og:description" content=" An Introduction to Slumdown A Hugo theme and R package by Danielle Navarro 
-The idea behind slumdown is to provide an R package and Hugo theme designed to work together when writing a blogdown site (see the about page for more detail). The posts listed below area work in progress, but are intended to serve as a succinct introduction and how-to guide.
-  ">
+<meta property="og:description" content="Spotify Through the Decades Analysing Spotify’s trends in popular music over time 
+This site explores the Top 100 Songs of each decade, from the 2010’s all the way back to the 1950’s. Click through the pages for each decade to see its top artists and genres, as well as what sort of audio features contributed towards making a song popular.
+Here are some brief explanations of the audio features provided by Spotify for the top songs of each decade.">
 <meta property="og:image" content="https://naomi-r.github.io/waffle-blog/header/waffle_PNG78.png">
 
 </head>
@@ -29,12 +29,12 @@ The idea behind slumdown is to provide an R package and Hugo theme designed to w
 <div class="article-header">
   
   
-  <img src="./header/clipart-color-splash.png" class="article-banner" itemprop="image" alt="">
+  <img src="./header/pink_performer_crop.jpg" class="article-banner" itemprop="image" alt="">
   
 
   
   
-  <img src="./header/waffle_PNG78.png" class="article-header-profile" itemprop="image" alt="">
+  <img src="./%25!s%28%3cnil%3e%29" class="article-header-profile" itemprop="image" alt="">
   
 
 
@@ -48,13 +48,21 @@ The idea behind slumdown is to provide an R package and Hugo theme designed to w
     
     <li><a href="./">Home</a></li>
     
-    <li><a href="./about/">About</a></li>
+    <li><a href="./1950s/">1950&#39;s</a></li>
     
-    <li><a href="./post/">Posts</a></li>
+    <li><a href="./1960s/">1960&#39;s</a></li>
     
-    <li><a href="./project/">Projects</a></li>
+    <li><a href="./1970s/">1970&#39;s</a></li>
     
-    <li><a href="./tags/">Tags</a></li>
+    <li><a href="./1980s/">1980&#39;s</a></li>
+    
+    <li><a href="./1990s/">1990&#39;s</a></li>
+    
+    <li><a href="./2000s/">2000&#39;s</a></li>
+    
+    <li><a href="./2010s/">2010&#39;s</a></li>
+    
+    <li><a href="./wrapup/">Wrap Up</a></li>
     
   </ul>
 </nav>
@@ -64,13 +72,26 @@ The idea behind slumdown is to provide an R package and Hugo theme designed to w
         
 
 
-<div id="an-introduction-to-slumdown" class="section level1">
-<h1>An Introduction to Slumdown</h1>
-<div id="a-hugo-theme-and-r-package-by-danielle-navarro" class="section level3">
-<h3>A Hugo theme and R package by <a href="https://twitter.com/djnavarro">Danielle Navarro</a></h3>
-<p><img src="header/slumdown.png" width="150px" style="float:right; padding:15px;"></p>
+<div id="spotify-through-the-decades" class="section level1">
+<h1>Spotify Through the Decades</h1>
+<div id="analysing-spotifys-trends-in-popular-music-over-time" class="section level3">
+<h3>Analysing Spotify’s trends in popular music over time</h3>
+<p><img src="header/spotify_logo.png" width="150px" style="float:right; padding:30px;"></p>
 <p><br></p>
-<p>The idea behind <em>slumdown</em> is to provide an R package and Hugo theme designed to work together when writing a <em>blogdown</em> site (see the <a href="about/">about</a> page for more detail). The posts listed below area work in progress, but are intended to serve as a succinct introduction and how-to guide.</p>
+<p>This site explores the Top 100 Songs of each decade, from the 2010’s all the way back to the 1950’s. Click through the pages for each decade to see its top artists and genres, as well as what sort of audio features contributed towards making a song popular.</p>
+<p>Here are some brief explanations of the audio features provided by Spotify for the top songs of each decade. For a full breakdown of how these metrics are calculated, you can visit <a href="https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/">Spotify for Developers</a>.</p>
+<ul>
+<li>bpm: beats per minute</li>
+<li>energy: the higher the value, the more energetic the song is</li>
+<li>danceability: the higher the value, the easier it is to dance to this song</li>
+<li>loudness: the higher the value, the louder the song in decibels</li>
+<li>liveness: the higher the value, the more likely the song is a live recording</li>
+<li>valence: the higher the value, the more positive the mood for the song</li>
+<li>duration: the duration of the song</li>
+<li>acousticness: the higher the value, the more acoustic the song is</li>
+<li>speechiness: the higher the value, the more spoken word the song contains</li>
+</ul>
+<p><font size="2"><em>The data used for this website was obtained from <a href="https://www.kaggle.com/cnic92/spotify-past-decades-songs-50s10s/data">Nicolas Carbone</a>. Here you can view the Top 100 songs for each decade.</em> </font></p>
 </div>
 </div>
 
@@ -120,7 +141,7 @@ The idea behind slumdown is to provide an R package and Hugo theme designed to w
 
   
   <br/><br/>
-  © <a href="https://djnavarro.net">Naomi R</a> 2018&ndash;2019 | <a href="https://github.com/djnavarro">Github</a> | <a href="https://twitter.com/djnavarro">Twitter</a>
+  © <a href="https://github.com/naomi-r">Naomi Rahman</a> 2020 | <a href="https://www.spotify.com/">Visit Spotify</a>
   <br/><br/>
   
 </footer>

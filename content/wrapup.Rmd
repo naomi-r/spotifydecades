@@ -1,0 +1,66 @@
+---
+title: "The Decades: Wrapped"
+type: "generic_page"
+---
+
+<style>
+p.caption {
+ font-size: 10pt; 
+}
+</style>
+
+# The Decades: Wrapped
+
+![Photo by [Chris Leipelt](https://unsplash.com/@cleipelt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/pop-music?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](/./wrapup_files/performer_shadow_crop.jpg)
+
+Here we'll look at how audio features have changed for popular music over time: 
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(slumdown)
+library(knitr)
+source('../data_prep.r')
+source('../helper_functions.r')
+
+```
+
+
+```{r wrapped, echo=FALSE}
+song_characteristics_over_time <- spotify_data_clean %>%
+  group_by(decade) %>% 
+  summarise_at(vars(bpm:speechiness), mean, na.rm = TRUE) %>% 
+  ungroup() %>% 
+  pivot_longer(-decade, names_to = "metric", values_to = "value")
+
+# all metrics except bpm, loudness, duration are measured between 0-100
+song_characteristics_over_time %>%  
+  filter(metric != "bpm", 
+         metric != "loudness", 
+         metric != "duration") %>% 
+  ggplot(aes(x = decade, y = value, colour = metric)) +
+  geom_line() +
+  ggtitle("Audio Features Over the Decades") +
+  xlab("Year") +                  
+  ylab("Average Value") +
+  scale_colour_discrete(name = "Metric") +
+  theme_classic() +
+  theme(
+    plot.title = element_text(size = 16, 
+                                face = "bold", 
+                                hjust = 0.5)
+  )
+  
+```
+<br>
+We can draw some interesting insights from this graph: 
+
+- acousticness: There has been a dramatic decrease in acousticness over time. This is likely due to the development of electronic instruments and digital sound mixing, which created new genres such as pop and electronic music that dominate the Top 100's
+
+- danceability: There has been a gradual increase in how easy it is to dance to music as decades have passed. This could reflect a cultural shift towards dance clubs becoming more widespread - and the need for music to fill these venues 
+
+- energy: There has been a similarly gradual increase in how energetic popular music has been over the decades, probably again because of a cultural shift towards mainstream dance clubs 
+liveness: The presence of live audiences in recordings has remained steady over time 
+
+- speechiness: This has also remained fairly steady over time, until reaching a peak in the 2000's when rap music became more popular 
+
+- valence: It appears there has been an overall decrease in the mood of popular songs, especially in the past 20 years. Perhaps this could be due to a greater awareness of mental health in recent years, leading to artists creating music regarding these topics that listeners can appreciate

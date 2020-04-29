@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Waffle Blog</title>
+    <title>Home on Spotify Through the Decades</title>
     <link>/</link>
-    <description>Recent content in Home on Waffle Blog</description>
+    <description>Recent content in Home on Spotify Through the Decades</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Apr 2020 00:00:00 +0000</lastBuildDate>
@@ -105,6 +105,88 @@ Here are some things I dont know:  this that anything else  Header Placekitten
       
       <guid>/about/</guid>
       <description>The idea behind slumdown The slum theme for Hugo and blogdown is an adaptation Yihue Xie’s Xmin theme that borrows stylistic elements from the Tufte R Markdown theme and from the academic Hugo theme. Originally it was intended to be extremely minimal, with the very modest goal of trying to make sure I understood the logic of how Hugo generates static sites. The more I played with it though, the more I enjoyed it.</description>
+    </item>
+    
+    <item>
+      <title>The Decades: Wrapped</title>
+      <link>/wrapup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wrapup/</guid>
+      <description>p.caption { font-size: 10pt; }  The Decades: Wrapped Photo by Chris Leipelt on Unsplash
+ Here we’ll look at how audio features have changed for popular music over time:
+We can draw some interesting insights from this graph:
+ acousticness: There has been a dramatic decrease in acousticness over time. This is likely due to the development of electronic instruments and digital sound mixing, which created new genres such as pop and electronic music that dominate the Top 100’s</description>
+    </item>
+    
+    <item>
+      <title>Top Songs of the 1950&#39;s</title>
+      <link>/1950s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1950s/</guid>
+      <description>p.caption { font-size: 10pt; }  Top Songs of the 1950’s Photo by Shawn Rodgers on Unsplash
+ Top 5 Songs   Decade Rank  Title  Artist  Genre  Year      1  Put Your Head On My Shoulder  Paul Anka  adult standards  2000    2  Whatever Will Be Will Be (Que Sera Sera) (with Frank DeVol &amp;amp; His Orchestra) - Single Version  Doris Day  adult standards  1948    3  Everybody Loves Somebody  Dean Martin  adult standards  2013    4  Take Good Care Of My Baby - 1990 Remastered  Bobby Vee  adult standards  2011    5  A Teenager In Love  Dion &amp;amp; The Belmonts  adult standards  1959     Note: If year of song is outside of 1950, then year corresponds to re-release year (not original release year).</description>
+    </item>
+    
+    <item>
+      <title>Top Songs of the 1960&#39;s</title>
+      <link>/1960s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1960s/</guid>
+      <description>p.caption { font-size: 10pt; }  Top Songs of the 1960’s Photo by Guillaume Techer on Unsplash
+ Top 5 Songs   Decade Rank  Title  Artist  Genre  Year      1  Here Comes The Sun - Remastered 2009  The Beatles  british invasion  1969    2  Come Together - Remastered 2009  The Beatles  british invasion  1969    3  Sweet Caroline  Neil Diamond  adult standards  1969    4  Yesterday - Remastered 2009  The Beatles  british invasion  1965    5  Can’t Help Falling in Love  Elvis Presley  adult standards  1961      Most Popular Genres Here are the genre types that make up the top songs of the decade:</description>
+    </item>
+    
+    <item>
+      <title>Top Songs of the 1970&#39;s</title>
+      <link>/1970s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1970s/</guid>
+      <description>p.caption { font-size: 10pt; }  Top Songs of the 1970’s Photo by Paul Zoetemeijer on Unsplash
+ Top 5 Songs   Decade Rank  Title  Artist  Genre  Year      1  Bohemian Rhapsody - 2011 Mix  Queen  glam rock  1975    2  Highway to Hell  AC/DC  album rock  1979    3  Don’t Stop Me Now - 2011 Mix  Queen  glam rock  1978    4  Rocket Man (I Think It’s Going To Be A Long Long Time)  Elton John  glam rock  1972    5  We Will Rock You - Remastered  Queen  glam rock  1977      Most Popular Genres Here are the genre types that make up the top songs of the decade:</description>
+    </item>
+    
+    <item>
+      <title>Top Songs of the 1980&#39;s</title>
+      <link>/1980s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1980s/</guid>
+      <description>p.caption { font-size: 10pt; }  Top Songs of the 1980’s Photo by Israel Palacio on Unsplash
+ Top 5 Songs   Decade Rank  Title  Artist  Genre  Year      1  Livin’ On A Prayer  Bon Jovi  glam metal  1986    2  Africa  TOTO  album rock  1982    3  Another One Bites The Dust - Remastered 2011  Queen  glam rock  1980    4  Break My Stride  Matthew Wilder  new wave pop  1983    5  I Wanna Dance with Somebody (Who Loves Me)  Whitney Houston  dance pop  1987      Most Popular Genres Here are the genre types that make up the top songs of the decade:</description>
+    </item>
+    
+    <item>
+      <title>Top Songs of the 1990&#39;s</title>
+      <link>/1990s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1990s/</guid>
+      <description>p.caption { font-size: 10pt; }  Top Songs of the 1990’s Photo by Sam Moqadam on Unsplash
+ Top 5 Songs   Decade Rank  Title  Artist  Genre  Year      1  No Scrubs  TLC  atl hip hop  1999    2  I Want It That Way  Backstreet Boys  boy band  2001    3  It Wasn’t Me  Shaggy  dance pop  2000    4  Because You Loved Me (Theme from “Up Close and Personal”)  CÃ©line Dion  canadian pop  1996    5  Big Poppa - 2005 Remaster  The Notorious B.</description>
+    </item>
+    
+    <item>
+      <title>Top Songs of the 2000&#39;s</title>
+      <link>/2000s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2000s/</guid>
+      <description>p.caption { font-size: 10pt; }  Top Songs of the 2000’s Photo by Victor Rodvang on Unsplash
+ Top 5 Songs   Decade Rank  Title  Artist  Genre  Year      1  In the End  Linkin Park  alternative metal  2000    2  The Scientist  Coldplay  permanent wave  2002    3  Numb  Linkin Park  alternative metal  2003    4  Fix You  Coldplay  permanent wave  2005    5  Umbrella  Rihanna  barbadian pop  2008      Most Popular Genres Here are the genre types that make up the top songs of the decade:</description>
+    </item>
+    
+    <item>
+      <title>Top Songs of the 2010&#39;s</title>
+      <link>/2010s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2010s/</guid>
+      <description>p.caption { font-size: 10pt; }  Top Songs of the 2010’s Photo by Austin Neill on Unsplash
+ Top 5 Songs   Decade Rank  Title  Artist  Genre  Year      1  bad guy  Billie Eilish  electropop  2019    2  7 rings  Ariana Grande  dance pop  2019    3  Old Town Road - Remix  Lil Nas X  country rap  2019    4  SeÃ±orita  Shawn Mendes  canadian pop  2019    5  rockstar (feat.</description>
     </item>
     
   </channel>

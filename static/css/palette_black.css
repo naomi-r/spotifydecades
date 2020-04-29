@@ -1,0 +1,11 @@
+ /* black colour scheme */
+:root { 
+  --pagecolour: #242322;  
+  --maintext: #ffffff;  
+  --faded: #a1a1a1; 
+  --highlight: #1DB954; 
+  --lowlight: #a1a1a1; 
+}
+body {
+  text-align:justify
+}

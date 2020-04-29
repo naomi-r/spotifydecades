@@ -1,0 +1,172 @@
+---
+title: "Top Songs of the 2000's"
+type: "generic_page"
+---
+
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+
+
+<style>
+p.caption {
+ font-size: 10pt;  
+}
+</style>
+<div id="top-songs-of-the-2000s" class="section level1">
+<h1>Top Songs of the 2000’s</h1>
+<div class="figure">
+<img src="/./2000s_files/yellow_singer.jpg" alt="Photo by Victor Rodvang on Unsplash" />
+<p class="caption">Photo by <a href="https://unsplash.com/@rodograph?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Victor Rodvang</a> on <a href="https://unsplash.com/s/photos/pop-music?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+</div>
+<div id="top-5-songs" class="section level3">
+<h3>Top 5 Songs</h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;font-weight: bold;background-color: black !important;">
+Decade Rank
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Title
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Artist
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Genre
+</th>
+<th style="text-align:right;font-weight: bold;background-color: black !important;">
+Year
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+In the End
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Linkin Park
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+alternative metal
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+The Scientist
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Coldplay
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+permanent wave
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2002
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+3
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Numb
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Linkin Park
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+alternative metal
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2003
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+4
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Fix You
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Coldplay
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+permanent wave
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2005
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+5
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Umbrella
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Rihanna
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+barbadian pop
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2008
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="most-popular-genres" class="section level3">
+<h3>Most Popular Genres</h3>
+Here are the genre types that make up the top songs of the decade:
+<br>
+<br>
+<center>
+<img src="/2000s_files/figure-html/top_genre-1.png" width="672" />
+</center>
+<p><br>
+Dance pop is the genre that defined the popular music of the 2000’s. ‘Barbadian pop’ is the next most common genre; this ranking being led by Rihanna’s emergence within and domination of the pop music scene.</p>
+</div>
+<div id="what-makes-a-song-popular" class="section level3">
+<h3>What Makes a Song Popular</h3>
+<p>Let’s unpack what actually <em>made</em> a song popular in the 2000’s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the 2000’s, with popularity as the dependent variable.</p>
+<p>After running the analysis, we are left with the following co-efficients for a regression formula:
+<br><br />
+<span class="math display">\[
+popularity = 75.98 + (-.09)(energy)
+\]</span>
+This equation lets us make the inference that in the 2000’s, the audio features of a track that contributed to it being popular were energy only. More specifically, a song being lower in energy would make it more popular, although this is not a strong predictor.</p>
+<p>A summary of the stepwise analysis is presented below:</p>
+<pre><code>## 
+## Call:
+## lm(formula = popularity ~ energy, data = spotify_data_clean %&gt;% 
+##     filter(decade == decade_input))
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -39.069  -4.039   2.172   5.513  14.431 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 75.98463    4.30314   17.66   &lt;2e-16 ***
+## energy      -0.08623    0.05947   -1.45     0.15    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 8.58 on 98 degrees of freedom
+## Multiple R-squared:  0.02101,    Adjusted R-squared:  0.01102 
+## F-statistic: 2.103 on 1 and 98 DF,  p-value: 0.1502</code></pre>
+</div>
+</div>

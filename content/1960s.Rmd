@@ -1,0 +1,62 @@
+---
+title: "Top Songs of the 1960's"
+type: "generic_page"
+---
+
+<style>
+p.caption {
+ font-size: 10pt; 
+} 
+</style>  
+
+# Top Songs of the 1960's
+
+![Photo by [Guillaume Techer](https://unsplash.com/@guillaume_t?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/vinyl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](/./1960s_files/vinyl.jpg)
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(slumdown)
+library(knitr)
+source('../data_prep.r')
+source('../helper_functions.r')
+page_year <- 1960
+
+```
+
+### Top 5 Songs
+```{r top_5, echo=FALSE}
+create_top_5(page_year)
+```
+### Most Popular Genres 
+Here are the genre types that make up the top songs of the decade: 
+<br>
+<br>
+<center>
+```{r top_genre, echo=FALSE}
+create_top_genre(page_year)
+
+```
+</center>
+<br> 
+Like for the 1950's, Spotify specifies that 'adult standards', which is a genre defined by classic or oldschool hits of the past, was popular in the 1960's. However, this genre is aggregating the songs of the 1960's (along with 'old' music of other decades) into a contemporary genre called 'adult standards', as they are 'throwback' songs relative to now. It is better to treat this genre as 'unspecified', as Spotify has not provided the genre of this music in the context of the 1960's. 
+
+Various rock subgenres, like 'album rock', 'art rock' and 'blues rock' were popular, as well as genres defined by culture, like 'brill building pop' from New York, and 'British Invasion' rock music. Genres in this decade seemed to be defined by where it came from, and the countercultures they produced. 
+<br>
+<br>
+
+
+### What Makes a Song Popular 
+
+Let's unpack what actually *made* a song popular in the `r page_year`'s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the `r page_year`'s, with popularity as the dependent variable. 
+
+After running the analysis, we are left with the following co-efficients for a regression formula: 
+<br>  
+$$
+popularity = 71.44 + (-0.11)(energy) + (0.67)(loudness) + (-0.12)(liveness) + (-0.58)(speechiness)
+$$
+This equation lets us make the inference that in the `r page_year`'s, the audio features of a track that contributed to it being popular were energy, loudness, liveness and speechiness. More specifically, a song being lower in energy, louder in volume, had less of an audience presence in the recording, and lower speechiness would make it more popular. 
+
+A summary of the stepwise analysis is presented below:  
+```{r stepwise, echo=FALSE} 
+stepwise_popular_model(page_year)

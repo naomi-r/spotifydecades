@@ -1,0 +1,68 @@
+---
+title: "Top Songs of the 1950's"
+type: "generic_page"
+---
+
+<style>
+p.caption {
+ font-size: 10pt;   
+}
+</style>
+
+# Top Songs of the 1950's
+
+![Photo by [Shawn Rodgers](https://unsplash.com/@directedbyshawn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/saxophone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](/./1950s_files/sax.jpg)
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(slumdown)
+library(knitr)
+library(kableExtra)
+source('../data_prep.r')
+source('../helper_functions.r')
+page_year <- 1950
+
+```
+
+### Top 5 Songs
+```{r top_5, echo=FALSE}
+create_top_5(page_year)
+
+```
+<font size="2">*Note: If year of song is outside of `r page_year`, then year corresponds to re-release year (not original release year).* </font>
+<br>
+<br> 
+
+### Most Popular Genres 
+Here are the genre types that make up the top songs of the decade: 
+<br>
+<br>
+<center>
+```{r top_genre, echo=FALSE}
+create_top_genre(page_year) 
+
+```
+</center>
+<br>
+Spotify specifies that 'adult standards', which is a genre defined by classic or oldschool hits of the past, was popular in the 1950's. However, this genre is aggregating the songs of the 1950's (along with 'old' music of other decades) into a contemporary genre called 'adult standards', as they are 'throwback' songs relative to now. It is better to treat this genre as 'unspecified', as Spotify has not provided the genre of this music in the context of the 1950's. 
+ 
+While the songs don't cluster into one contextually specific genre, it is interesting that some genres appear in the 1950's, like doo-wop, merseybeat and classic soul, that become relics of the past - they phase out of popularity in the coming decades. 
+<br>
+<br>
+
+
+### What Makes a Song Popular 
+
+Let's unpack what actually *made* a song popular in the `r page_year`'s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the `r page_year`'s, with popularity as the dependent variable. 
+
+After running the analysis, we are left with the following co-efficients for a regression formula: 
+<br>  
+$$
+popularity = 26.60 + (-0.10)(duration)
+$$
+This equation lets us make the inference that in the `r page_year`'s, the audio features of a track that contributed to it being popular were duration only. More specifically, a song being shorter in duration would make it more popular.  
+ 
+A summary of the stepwise analysis is presented below:  
+```{r stepwise, echo=FALSE} 
+stepwise_popular_model(page_year)

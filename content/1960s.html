@@ -1,0 +1,178 @@
+---
+title: "Top Songs of the 1960's"
+type: "generic_page"
+---
+
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+
+
+<style>
+p.caption {
+ font-size: 10pt; 
+} 
+</style>
+<div id="top-songs-of-the-1960s" class="section level1">
+<h1>Top Songs of the 1960’s</h1>
+<div class="figure">
+<img src="/./1960s_files/vinyl.jpg" alt="Photo by Guillaume Techer on Unsplash" />
+<p class="caption">Photo by <a href="https://unsplash.com/@guillaume_t?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Guillaume Techer</a> on <a href="https://unsplash.com/s/photos/vinyl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+</div>
+<div id="top-5-songs" class="section level3">
+<h3>Top 5 Songs</h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;font-weight: bold;background-color: black !important;">
+Decade Rank
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Title
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Artist
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Genre
+</th>
+<th style="text-align:right;font-weight: bold;background-color: black !important;">
+Year
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Here Comes The Sun - Remastered 2009
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+The Beatles
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+british invasion
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1969
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Come Together - Remastered 2009
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+The Beatles
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+british invasion
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1969
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+3
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Sweet Caroline
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Neil Diamond
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+adult standards
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1969
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+4
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Yesterday - Remastered 2009
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+The Beatles
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+british invasion
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1965
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+5
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Can’t Help Falling in Love
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Elvis Presley
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+adult standards
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1961
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="most-popular-genres" class="section level3">
+<h3>Most Popular Genres</h3>
+Here are the genre types that make up the top songs of the decade:
+<br>
+<br>
+<center>
+<img src="/1960s_files/figure-html/top_genre-1.png" width="672" />
+</center>
+<p><br>
+Like for the 1950’s, Spotify specifies that ‘adult standards’, which is a genre defined by classic or oldschool hits of the past, was popular in the 1960’s. However, this genre is aggregating the songs of the 1960’s (along with ‘old’ music of other decades) into a contemporary genre called ‘adult standards’, as they are ‘throwback’ songs relative to now. It is better to treat this genre as ‘unspecified’, as Spotify has not provided the genre of this music in the context of the 1960’s.</p>
+<p>Various rock subgenres, like ‘album rock’, ‘art rock’ and ‘blues rock’ were popular, as well as genres defined by culture, like ‘brill building pop’ from New York, and ‘British Invasion’ rock music. Genres in this decade seemed to be defined by where it came from, and the countercultures they produced.
+<br>
+<br></p>
+</div>
+<div id="what-makes-a-song-popular" class="section level3">
+<h3>What Makes a Song Popular</h3>
+<p>Let’s unpack what actually <em>made</em> a song popular in the 1960’s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the 1960’s, with popularity as the dependent variable.</p>
+<p>After running the analysis, we are left with the following co-efficients for a regression formula:
+<br><br />
+<span class="math display">\[
+popularity = 71.44 + (-0.11)(energy) + (0.67)(loudness) + (-0.12)(liveness) + (-0.58)(speechiness)
+\]</span>
+This equation lets us make the inference that in the 1960’s, the audio features of a track that contributed to it being popular were energy, loudness, liveness and speechiness. More specifically, a song being lower in energy, louder in volume, had less of an audience presence in the recording, and lower speechiness would make it more popular.</p>
+<p>A summary of the stepwise analysis is presented below:</p>
+<pre><code>## 
+## Call:
+## lm(formula = popularity ~ energy + loudness + liveness + speechiness, 
+##     data = spotify_data_clean %&gt;% filter(decade == decade_input))
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -23.8755  -9.4337  -0.2883   6.8742  27.0419 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 71.44409    7.26498   9.834  5.1e-16 ***
+## energy      -0.10962    0.07387  -1.484    0.141    
+## loudness     0.67343    0.40578   1.660    0.100    
+## liveness    -0.11667    0.07559  -1.543    0.126    
+## speechiness -0.57738    0.35632  -1.620    0.109    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 11.46 on 92 degrees of freedom
+## Multiple R-squared:  0.1075, Adjusted R-squared:  0.06874 
+## F-statistic: 2.772 on 4 and 92 DF,  p-value: 0.03171</code></pre>
+</div>
+</div>

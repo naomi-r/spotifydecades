@@ -2,13 +2,27 @@
 title: Home
 ---
 
+# Spotify Through the Decades
 
-# An Introduction to Slumdown
+### Analysing Spotify's trends in popular music over time
 
-### A Hugo theme and R package by [Danielle Navarro](https://twitter.com/djnavarro)
-
-<img src="header/slumdown.png" width="150px" style="float:right; padding:15px;">
+<img src="header/spotify_logo.png" width="150px" style="float:right; padding:30px;">  
 
 <br>
 
-The idea behind *slumdown* is to provide an R package and Hugo theme designed to work together when writing a *blogdown* site (see the [about](about/) page for more detail). The posts listed below area work in progress, but are intended to serve as a succinct introduction and how-to guide.
+This site explores the Top 100 Songs of each decade, from the 2010's all the way back to the 1950's. Click through the pages for each decade to see its top artists and genres, as well as what sort of audio features contributed towards making a song popular. 
+
+Here are some brief explanations of the audio features provided by Spotify for the top songs of each decade. For a full breakdown of how these metrics are calculated, you can visit [Spotify for Developers](https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/). 
+
+- bpm: beats per minute
+- energy: the higher the value, the more energetic the song is
+- danceability: the higher the value, the easier it is to dance to this song
+- loudness: the higher the value, the louder the song in decibels 
+- liveness: the higher the value, the more likely the song is a live recording
+- valence: the higher the value, the more positive the mood for the song
+- duration: the duration of the song
+- acousticness: the higher the value, the more acoustic the song is
+- speechiness: the higher the value, the more spoken word the song contains 
+
+
+<font size="2">*The data used for this website was obtained from [Nicolas Carbone](https://www.kaggle.com/cnic92/spotify-past-decades-songs-50s10s/data). Here you can view the Top 100 songs for each decade.* </font>

@@ -110,4 +110,36 @@
     <loc>/categories/</loc>
   </url>
   
+  <url>
+    <loc>/wrapup/</loc>
+  </url>
+  
+  <url>
+    <loc>/1950s/</loc>
+  </url>
+  
+  <url>
+    <loc>/1960s/</loc>
+  </url>
+  
+  <url>
+    <loc>/1970s/</loc>
+  </url>
+  
+  <url>
+    <loc>/1980s/</loc>
+  </url>
+  
+  <url>
+    <loc>/1990s/</loc>
+  </url>
+  
+  <url>
+    <loc>/2000s/</loc>
+  </url>
+  
+  <url>
+    <loc>/2010s/</loc>
+  </url>
+  
 </urlset>

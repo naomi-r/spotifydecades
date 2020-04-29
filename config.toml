@@ -26,7 +26,7 @@ publishDir = "docs"
 
 # These settings specify the title for your blog, and the name of
 # the Hugo theme that it uses.
-title = "Waffle Blog"
+title = "Spotify Through the Decades"
 theme = "hugo-slum"
 
 
@@ -74,21 +74,37 @@ footnotereturnlinkcontents = "↩"
     url = "/"
     weight = 1
 [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "1950's"
+    url = "/1950s/"
     weight = 2
 [[menu.main]]
-    name = "Posts"
-    url = "/post/"
+    name = "1960's"
+    url = "/1960s/"
     weight = 3
 [[menu.main]]
-    name = "Projects"
-    url = "/project/"
+    name = "1970's"
+    url = "/1970s/"
     weight = 4
 [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
+    name = "1980's"
+    url = "/1980s/"
     weight = 5
+[[menu.main]]
+    name = "1990's"
+    url = "/1990s/"
+    weight = 6
+[[menu.main]]
+    name = "2000's"
+    url = "/2000s/"
+    weight = 7
+[[menu.main]]
+    name = "2010's"
+    url = "/2010s/"
+    weight = 8
+[[menu.main]]
+    name = "Wrap Up"
+    url = "/wrapup/"
+    weight = 9
 
 
 
@@ -108,9 +124,8 @@ footnotereturnlinkcontents = "↩"
 # - "description" of the site
 # - "footer" contents
 [params]
-    siteHeader = "header/clipart-color-splash.png"
-    siteProfile = "header/waffle_PNG78.png"
+    siteHeader = "header/pink_performer_crop.jpg"
     twitterImage = "https://naomi-r.github.io/waffle-blog/header/waffle_PNG78.png"
-    colourScheme = "css/palette_light.css"
-    description = "A blog about waffles."
-    footer = "&copy; [Naomi R](https://djnavarro.net) 2018--2019 | [Github](https://github.com/djnavarro) | [Twitter](https://twitter.com/djnavarro)"
+    colourScheme = "css/palette_black.css"
+    description = "An analysis of Spotify's trends in popular music over time"
+    footer = "&copy; [Naomi Rahman](https://github.com/naomi-r) 2020 | [Visit Spotify](https://www.spotify.com/)"

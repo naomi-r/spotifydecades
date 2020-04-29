@@ -1,0 +1,175 @@
+---
+title: "Top Songs of the 2010's"
+type: "generic_page"
+---
+
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+
+
+<style> 
+p.caption {
+ font-size: 10pt;   
+}
+</style>
+<div id="top-songs-of-the-2010s" class="section level1">
+<h1>Top Songs of the 2010’s</h1>
+<div class="figure">
+<img src="/./2010s_files/smoke_dj.jpg" alt="Photo by Austin Neill on Unsplash" />
+<p class="caption">Photo by <a href="https://unsplash.com/@arstyy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Austin Neill</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+</div>
+<div id="top-5-songs" class="section level3">
+<h3>Top 5 Songs</h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;font-weight: bold;background-color: black !important;">
+Decade Rank
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Title
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Artist
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Genre
+</th>
+<th style="text-align:right;font-weight: bold;background-color: black !important;">
+Year
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+bad guy
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Billie Eilish
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+electropop
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2019
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+7 rings
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Ariana Grande
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+dance pop
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2019
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+3
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Old Town Road - Remix
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Lil Nas X
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+country rap
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2019
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+4
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+SeÃ±orita
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Shawn Mendes
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+canadian pop
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2019
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+5
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+rockstar (feat. 21 Savage)
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Post Malone
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+dfw rap
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2018
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="most-popular-genres" class="section level3">
+<h3>Most Popular Genres</h3>
+Here are the genre types that make up the top songs of the decade:
+<br>
+<br>
+<center>
+<img src="/2010s_files/figure-html/top_genre-1.png" width="672" />
+</center>
+<p><br><br />
+With almost half of 2010’s Top 100 songs fitting into the ‘dance pop’ genre, this represents what popular music sounded like in the decade. ‘Big room’ is a subgenre of electronic house music, and comes in second to the popularity of ‘dance pop’.
+<br>
+<br></p>
+</div>
+<div id="what-makes-a-song-popular" class="section level3">
+<h3>What Makes a Song Popular</h3>
+<p>Let’s unpack what actually <em>made</em> a song popular in the 2010’s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the 2010’s, with popularity as the dependent variable.</p>
+<p>After running the analysis, we are left with the following co-efficients for a regression formula:
+<br><br />
+<span class="math display">\[
+popularity = 89.05 + (-.21)(energy) + (0.17)(speechiness)
+\]</span>
+This equation lets us make the inference that in the 2010’s, the audio features of a track that contributed to it being popular were energy and speechiness. More specifically, a song being lower in energy and higher in speechiness would make it more popular.</p>
+<p>A summary of the stepwise analysis is presented below:</p>
+<pre><code>## 
+## Call:
+## lm(formula = popularity ~ energy + speechiness, data = spotify_data_clean %&gt;% 
+##     filter(decade == decade_input))
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -41.373  -3.951   1.305   5.254  12.777 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 89.04530    3.85469  23.101  &lt; 2e-16 ***
+## energy      -0.21344    0.05251  -4.065 9.78e-05 ***
+## speechiness  0.16995    0.10919   1.556    0.123    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 8.467 on 97 degrees of freedom
+## Multiple R-squared:  0.1719, Adjusted R-squared:  0.1549 
+## F-statistic: 10.07 on 2 and 97 DF,  p-value: 0.0001062</code></pre>
+</div>
+</div>

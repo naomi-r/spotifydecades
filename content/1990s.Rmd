@@ -1,0 +1,65 @@
+---
+title: "Top Songs of the 1990's"
+type: "generic_page"
+---
+
+<style>
+p.caption {
+ font-size: 10pt;   
+}
+</style>
+
+# Top Songs of the 1990's
+
+![Photo by [Sam Moqadam](https://unsplash.com/@sammoqadam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/rock-guitar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](/./1990s_files/yellow_guitar_crop.jpg)
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(slumdown)
+library(knitr)
+source('../data_prep.r')
+source('../helper_functions.r')
+page_year <- 1990
+
+```
+
+### Top 5 Songs
+```{r top_5, echo=FALSE}
+create_top_5(page_year)
+```
+<font size="2">*Note: If year of song is outside of `r page_year`, then year corresponds to re-release year (not original release year).* </font>
+<br>
+<br> 
+
+### Most Popular Genres 
+Here are the genre types that make up the top songs of the decade: 
+<br>
+<br>
+<center>
+```{r top_genre, echo=FALSE}
+create_top_genre(page_year)
+
+```
+</center>
+<br> 
+'Dance pop' leads the top genre of the 1990's, while boy bands were also popular. European music had a big influence on popular music, with bubblegum dance (a Eurodance subgenre), eurodance and europop contributing heavily to the charts. 
+<br>
+<br>
+
+
+### What Makes a Song Popular 
+
+Let's unpack what actually *made* a song popular in the `r page_year`'s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the `r page_year`'s, with popularity as the dependent variable. 
+
+After running the analysis, we are left with the following co-efficients for a regression formula: 
+<br>  
+$$
+popularity = 75.12 + (-.0.10)(energy) + (0.98)(loudness) + (0.06)(valence)
+$$
+This equation lets us make the inference that in the `r page_year`'s, the audio features of a track that contributed to it being popular were energy, loudness and valence. More specifically, a song being lower in energy, louder in volume and more positive in valence would make it more popular. This finding aligns with the 'bubbly' cheerfulness of the boy band and eurodance genres that were popular in the `r page_year`'s. 
+
+A summary of the stepwise analysis is presented below:  
+```{r stepwise, echo=FALSE} 
+stepwise_popular_model(page_year)
+```

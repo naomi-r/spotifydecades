@@ -1,0 +1,62 @@
+---
+title: "Top Songs of the 2010's"
+type: "generic_page"
+---
+
+<style> 
+p.caption {
+ font-size: 10pt;   
+}
+</style>       
+
+# Top Songs of the 2010's
+
+![Photo by [Austin Neill](https://unsplash.com/@arstyy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](/./2010s_files/smoke_dj.jpg)
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(slumdown)
+library(knitr)
+source('../data_prep.r')
+source('../helper_functions.r')
+page_year <- 2010
+
+```
+
+### Top 5 Songs
+```{r top_5, echo=FALSE}
+create_top_5(page_year)   
+```
+### Most Popular Genres 
+
+Here are the genre types that make up the top songs of the decade: 
+<br>
+<br>
+<center>
+```{r top_genre, echo=FALSE}      
+create_top_genre(page_year)      
+
+```
+</center>
+<br>     
+With almost half of 2010's Top 100 songs fitting into the 'dance pop' genre, this represents what popular music sounded like in the decade. 'Big room' is a subgenre of electronic house music, and comes in second to the popularity of 'dance pop'.
+<br>
+<br>
+
+
+### What Makes a Song Popular 
+
+Let's unpack what actually *made* a song popular in the `r page_year`'s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the `r page_year`'s, with popularity as the dependent variable. 
+
+After running the analysis, we are left with the following co-efficients for a regression formula: 
+<br>  
+$$
+popularity = 89.05 + (-.21)(energy) + (0.17)(speechiness)
+$$
+This equation lets us make the inference that in the `r page_year`'s, the audio features of a track that contributed to it being popular were energy and speechiness. More specifically, a song being lower in energy and higher in speechiness would make it more popular.      
+
+A summary of the stepwise analysis is presented below:  
+```{r stepwise, echo=FALSE} 
+stepwise_popular_model(page_year)
+```

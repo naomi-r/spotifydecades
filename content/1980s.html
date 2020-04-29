@@ -1,0 +1,178 @@
+---
+title: "Top Songs of the 1980's"
+type: "generic_page"
+---
+
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+
+
+<style>
+p.caption {
+ font-size: 10pt; 
+}
+</style>
+<div id="top-songs-of-the-1980s" class="section level1">
+<h1>Top Songs of the 1980’s</h1>
+<div class="figure">
+<img src="/./1980s_files/mic.jpg" alt="Photo by Israel Palacio on Unsplash" />
+<p class="caption">Photo by <a href="https://unsplash.com/@othentikisra?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Israel Palacio</a> on <a href="https://unsplash.com/s/photos/radio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+</div>
+<div id="top-5-songs" class="section level3">
+<h3>Top 5 Songs</h3>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;font-weight: bold;background-color: black !important;">
+Decade Rank
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Title
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Artist
+</th>
+<th style="text-align:left;font-weight: bold;background-color: black !important;">
+Genre
+</th>
+<th style="text-align:right;font-weight: bold;background-color: black !important;">
+Year
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Livin’ On A Prayer
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Bon Jovi
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+glam metal
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1986
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+2
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Africa
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+TOTO
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+album rock
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1982
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+3
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Another One Bites The Dust - Remastered 2011
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Queen
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+glam rock
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1980
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+4
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Break My Stride
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Matthew Wilder
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+new wave pop
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1983
+</td>
+</tr>
+<tr>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+5
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+I Wanna Dance with Somebody (Who Loves Me)
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+Whitney Houston
+</td>
+<td style="text-align:left;color: white !important;background-color: black !important;">
+dance pop
+</td>
+<td style="text-align:right;color: white !important;background-color: black !important;">
+1987
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="most-popular-genres" class="section level3">
+<h3>Most Popular Genres</h3>
+Here are the genre types that make up the top songs of the decade:
+<br><br />
+<br>
+<center>
+<img src="/1980s_files/figure-html/top_genre-1.png" width="672" />
+</center>
+<p><br>
+Rock music dominated the charts, with ‘album rock’ and ‘dance rock’ making up over half of the Top 100 songs of the decade. ‘Adult standards’, which is a genre defined by classic or oldschool hits of the past, also contributed to the top songs; followed by other subgenres of pop and rock.
+<br>
+<br></p>
+</div>
+<div id="what-makes-a-song-popular" class="section level3">
+<h3>What Makes a Song Popular</h3>
+<p>Let’s unpack what actually <em>made</em> a song popular in the 1980’s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the 1980’s, with popularity as the dependent variable.</p>
+<p>After running the analysis, we are left with the following co-efficients for a regression formula:
+<br><br />
+<span class="math display">\[
+popularity = 79.29 + (-.0.09)(energy) + (-0.02)(duration) + (-0.08)(acousticness) + (0.41)(speechiness)
+\]</span>
+This equation lets us make the inference that in the 1980’s, the audio features of a track that contributed to it being popular were energy, duration, acousticness and speechiness. More specifically, a song being lower in energy, shorter in duration, lower in acousticness and higher in speechiness would make it more popular.</p>
+<p>A summary of the stepwise analysis is presented below:</p>
+<pre><code>## 
+## Call:
+## lm(formula = popularity ~ energy + duration + acousticness + 
+##     speechiness, data = spotify_data_clean %&gt;% filter(decade == 
+##     decade_input))
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -25.6532  -4.0732   0.0869   4.0240  16.5770 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  79.29231    4.59974  17.238   &lt;2e-16 ***
+## energy       -0.09284    0.04226  -2.197   0.0303 *  
+## duration     -0.02088    0.01376  -1.518   0.1322    
+## acousticness -0.08048    0.03731  -2.157   0.0334 *  
+## speechiness   0.41234    0.26912   1.532   0.1286    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 7.146 on 100 degrees of freedom
+## Multiple R-squared:  0.09032,    Adjusted R-squared:  0.05394 
+## F-statistic: 2.482 on 4 and 100 DF,  p-value: 0.04853</code></pre>
+</div>
+</div>
