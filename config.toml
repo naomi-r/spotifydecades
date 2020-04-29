@@ -9,7 +9,7 @@
 # GitHub pages the way I've done for the example site at
 # https://djnavarro.github.io/hugo-slum/, then you can do something
 # like this:
-baseurl = "/waffle-blog/"
+baseurl = "/spotifydecades/"
 
 
 
@@ -125,7 +125,7 @@ footnotereturnlinkcontents = "↩"
 # - "footer" contents
 [params]
     siteHeader = "header/pink_performer_crop.jpg"
-    twitterImage = "https://naomi-r.github.io/waffle-blog/header/waffle_PNG78.png"
+    twitterImage = "https://naomi-r.github.io/spotifydecades/header/pink_performer_crop.jpg"
     colourScheme = "css/palette_black.css"
     description = "An analysis of Spotify's trends in popular music over time"
     footer = "&copy; [Naomi Rahman](https://github.com/naomi-r) 2020 | [Visit Spotify](https://www.spotify.com/)"
