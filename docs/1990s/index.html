@@ -212,12 +212,14 @@ Here are the genre types that make up the top songs of the decade:
 <div id="what-makes-a-song-popular" class="section level3">
 <h3>What Makes a Song Popular</h3>
 <p>Let’s unpack what actually <em>made</em> a song popular in the 1990’s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the 1990’s, with popularity as the dependent variable.</p>
-<p>After running the analysis, we are left with the following co-efficients for a regression formula:
-<br><br />
+<p>After running the analysis, we are left with the following co-efficients for a regression formula:</p>
+<br>
+<center>
 <span class="math display">\[
 popularity = 75.12 + (-.0.10)(energy) + (0.98)(loudness) + (0.06)(valence)
 \]</span>
-This equation lets us make the inference that in the 1990’s, the audio features of a track that contributed to it being popular were energy, loudness and valence. More specifically, a song being lower in energy, louder in volume and more positive in valence would make it more popular. This finding aligns with the ‘bubbly’ cheerfulness of the boy band and eurodance genres that were popular in the 1990’s.</p>
+</center>
+<p>This equation lets us make the inference that in the 1990’s, the audio features of a track that contributed to it being popular were energy, loudness and valence. More specifically, a song being lower in energy, louder in volume and more positive in valence would make it more popular. This finding aligns with the ‘bubbly’ cheerfulness of the boy band and eurodance genres that were popular in the 1990’s.</p>
 <p>A summary of the stepwise analysis is presented below:</p>
 <pre><code>## 
 ## Call:

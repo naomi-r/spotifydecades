@@ -26,9 +26,8 @@
       
       <guid>/wrapup/</guid>
       <description>p.caption { font-size: 10pt; }  The Decades: Wrapped Photo by Chris Leipelt on Unsplash
- Here we’ll look at how audio features have changed for popular music over time:
-We can draw some interesting insights from this graph:
- acousticness: There has been a dramatic decrease in acousticness over time. This is likely due to the development of electronic instruments and digital sound mixing, which created new genres such as pop and electronic music that dominate the Top 100’s</description>
+ How have audio features changed for popular music over time?   Note: bpm, loudness and duration audio features have been excluded as their units do not correspond to the other unitless metrics, and their scales are incompatible.  We can draw some interesting insights from this graph:
+ acousticness: There has been a dramatic decrease in acousticness over time.</description>
     </item>
     
     <item>

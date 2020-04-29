@@ -49,10 +49,12 @@ Rock music dominated the charts, with 'album rock' and 'dance rock' making up ov
 Let's unpack what actually *made* a song popular in the `r page_year`'s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the `r page_year`'s, with popularity as the dependent variable. 
 
 After running the analysis, we are left with the following co-efficients for a regression formula: 
-<br>  
+
+<br> <center>
 $$
 popularity = 79.29 + (-.0.09)(energy) + (-0.02)(duration) + (-0.08)(acousticness) + (0.41)(speechiness)
 $$
+</center>
 This equation lets us make the inference that in the `r page_year`'s, the audio features of a track that contributed to it being popular were energy, duration, acousticness and speechiness. More specifically, a song being lower in energy, shorter in duration, lower in acousticness and higher in speechiness would make it more popular.
 
 A summary of the stepwise analysis is presented below:  

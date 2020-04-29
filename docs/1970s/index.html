@@ -202,7 +202,7 @@ Here are the genre types that make up the top songs of the decade:
 <img src="../1970s_files/figure-html/top_genre-1.png" width="672" />
 </center>
 <p><br>
-‘Album rock’ and ‘glam rock’ making up almost half of the top songs of the 1970’s.</p>
+‘Album rock’ and ‘glam rock’ make up almost half of the top songs of the 1970’s.</p>
 <p>Spotify specifies that ‘adult standards’, which is a genre defined by classic or oldschool hits of the past, was popular in the 1970’s. However, this genre is aggregating the songs of the 1970’s (along with ‘old’ music of other decades) into a contemporary genre called ‘adult standards’, as they are ‘throwback’ songs relative to now. ‘Adult standards’ thereby refers to what we now associate with ‘classic hits’.
 <br>
 <br></p>
@@ -210,12 +210,14 @@ Here are the genre types that make up the top songs of the decade:
 <div id="what-makes-a-song-popular" class="section level3">
 <h3>What Makes a Song Popular</h3>
 <p>Let’s unpack what actually <em>made</em> a song popular in the 1970’s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the 1970’s, with popularity as the dependent variable.</p>
-<p>After running the analysis, we are left with the following co-efficients for a regression formula:
-<br><br />
+<p>After running the analysis, we are left with the following co-efficients for a regression formula:</p>
+<br>
+<center>
 <span class="math display">\[
 popularity = 57.41 + (-0.10)(energy) + (0.04)(duration) + (0.77)(speechiness)
 \]</span>
-This equation lets us make the inference that in the 1970’s, the audio features of a track that contributed to it being popular were energy, duration and speechiness. More specifically, a song being lower in energy, longer in duration and higher in speechiness would make it more popular. This finding of duration corresponds with the extended song length that glam rock as a genre would tend to have in the1970’s.</p>
+</center>
+<p>This equation lets us make the inference that in the 1970’s, the audio features of a track that contributed to it being popular were energy, duration and speechiness. More specifically, a song being lower in energy, longer in duration and higher in speechiness would make it more popular. This finding of duration corresponds with the extended song length that glam rock as a genre would tend to have as an identifying feature in the 1970’s.</p>
 <p>A summary of the stepwise analysis is presented below:</p>
 <pre><code>## 
 ## Call:

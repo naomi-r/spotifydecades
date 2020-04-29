@@ -39,7 +39,7 @@ create_top_genre(page_year)
 ```
 </center>
 <br> 
-'Album rock' and 'glam rock' making up almost half of the top songs of the 1970's. 
+'Album rock' and 'glam rock' make up almost half of the top songs of the 1970's. 
 
 Spotify specifies that 'adult standards', which is a genre defined by classic or oldschool hits of the past, was popular in the 1970's. However, this genre is aggregating the songs of the 1970's (along with 'old' music of other decades) into a contemporary genre called 'adult standards', as they are 'throwback' songs relative to now. 'Adult standards' thereby refers to what we now associate with 'classic hits'. 
 <br>
@@ -51,11 +51,13 @@ Spotify specifies that 'adult standards', which is a genre defined by classic or
 Let's unpack what actually *made* a song popular in the `r page_year`'s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the `r page_year`'s, with popularity as the dependent variable. 
 
 After running the analysis, we are left with the following co-efficients for a regression formula: 
-<br>  
+
+<br> <center>
 $$
 popularity = 57.41 + (-0.10)(energy) + (0.04)(duration) + (0.77)(speechiness)
 $$
-This equation lets us make the inference that in the `r page_year`'s, the audio features of a track that contributed to it being popular were energy, duration and speechiness. More specifically, a song being lower in energy, longer in duration and higher in speechiness would make it more popular. This finding of duration corresponds with the extended song length that glam rock as a genre would tend to have in the`r page_year`'s.  
+</center>
+This equation lets us make the inference that in the `r page_year`'s, the audio features of a track that contributed to it being popular were energy, duration and speechiness. More specifically, a song being lower in energy, longer in duration and higher in speechiness would make it more popular. This finding of duration corresponds with the extended song length that glam rock as a genre would tend to have as an identifying feature in the `r page_year`'s.  
 
 A summary of the stepwise analysis is presented below:  
 ```{r stepwise, echo=FALSE} 

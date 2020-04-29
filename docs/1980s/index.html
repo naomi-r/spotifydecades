@@ -209,12 +209,14 @@ Rock music dominated the charts, with ‘album rock’ and ‘dance rock’ maki
 <div id="what-makes-a-song-popular" class="section level3">
 <h3>What Makes a Song Popular</h3>
 <p>Let’s unpack what actually <em>made</em> a song popular in the 1980’s. What elements of the music were important for it to be liked by the masses throughout a whole decade? To explore this, I ran a stepwise regression on all the audio features Spotify provided for the Top 100 songs of the 1980’s, with popularity as the dependent variable.</p>
-<p>After running the analysis, we are left with the following co-efficients for a regression formula:
-<br><br />
+<p>After running the analysis, we are left with the following co-efficients for a regression formula:</p>
+<br>
+<center>
 <span class="math display">\[
 popularity = 79.29 + (-.0.09)(energy) + (-0.02)(duration) + (-0.08)(acousticness) + (0.41)(speechiness)
 \]</span>
-This equation lets us make the inference that in the 1980’s, the audio features of a track that contributed to it being popular were energy, duration, acousticness and speechiness. More specifically, a song being lower in energy, shorter in duration, lower in acousticness and higher in speechiness would make it more popular.</p>
+</center>
+<p>This equation lets us make the inference that in the 1980’s, the audio features of a track that contributed to it being popular were energy, duration, acousticness and speechiness. More specifically, a song being lower in energy, shorter in duration, lower in acousticness and higher in speechiness would make it more popular.</p>
 <p>A summary of the stepwise analysis is presented below:</p>
 <pre><code>## 
 ## Call:
